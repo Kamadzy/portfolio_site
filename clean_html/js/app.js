@@ -1,3 +1,12 @@
-/**
- * Created by kamadzy on 16.07.17.
- */
+$(document).ready(function () {
+    $("body").niceScroll({
+        horizrailenabled: false
+    });
+
+    $(".toggle_menu").click(function() {
+        $(".sandwich").toggleClass("active");
+        $(".left_side").toggleClass("active");
+    });
+
+
+});
