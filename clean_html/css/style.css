@@ -34,6 +34,7 @@ body textarea:required:valid {
     z-index: 10;
     color: #fff;
     overflow-x: hidden;
+    outline: none;
     -webkit-transition: all .5s;
     -o-transition: all .5s;
     transition: all .5s;
@@ -228,4 +229,25 @@ svg path {
 }
 .aside_content li:nth-child(3) a::before{
     content: "R";
+}
+.content{
+    position: relative;
+    margin: 5px 5px 55px 55px;
+    left:0;
+}
+.gallery a{
+    overflow: hidden;
+    width: 320px;
+    display: block;
+}
+.gallery img{
+    display: block;
+    max-width:100%;
+}
+.left_side.active + .content{
+    left:250px;
+    -webkit-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+    transition-delay: .5s;
 }
