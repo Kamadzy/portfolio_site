@@ -12,62 +12,69 @@
 
     <link rel="stylesheet" href="css/fonts.css"/>
     <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/media.css"/>
 </head>
 <body>
-    <aside class="left_side">
-        <div class="toggle_menu" title="Menu">
+<aside class="left_side">
+    <div class="toggle_menu" title="Menu">
             <span class="sandwich">
                 <span class="sw-topper"></span>
                 <span class="sw-bottom"></span>
                 <span class="sw-footer"></span>
             </span>
-        </div>
-        <div class="aside_content">
-            <div class="user_info">
-                <img src="img/lucy.jpg" alt="lucy">
-                <h2>Scarlett Johansson</h2>
-                <p>Actress</p>
-            </div>
-
-            <nav>
-                <ul>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">About Me</a></li>
-                    <li><a href="#">Contacts</a></li>
-                </ul>
-            </nav>
-
-        </div>
-    </aside>
-    <div class="content gallery">
-        <a href="img/1.jpg"><img src="img/1.jpg" alt="Alt"></a>
-        <a href="img/2.jpg"><img src="img/2.jpg" alt="Alt"></a>
-        <a href="img/3.jpg"><img src="img/3.jpg" alt="Alt"></a>
-        <a href="img/4.jpg"><img src="img/4.jpg" alt="Alt"></a>
-        <a href="img/5.jpg"><img src="img/5.jpg" alt="Alt"></a>
-        <a href="img/6.jpg"><img src="img/6.jpg" alt="Alt"></a>
-        <a href="img/7.jpg"><img src="img/7.jpg" alt="Alt"></a>
-        <a href="img/8.jpg"><img src="img/8.jpg" alt="Alt"></a>
-        <a href="img/9.jpg"><img src="img/9.jpg" alt="Alt"></a>
-        <a href="img/10.jpg"><img src="img/10.jpg" alt="Alt"></a>
-        <a href="img/1.jpg"><img src="img/1.jpg" alt="Alt"></a>
-        <a href="img/2.jpg"><img src="img/2.jpg" alt="Alt"></a>
-        <a href="img/3.jpg"><img src="img/3.jpg" alt="Alt"></a>
-        <a href="img/4.jpg"><img src="img/4.jpg" alt="Alt"></a>
-        <a href="img/5.jpg"><img src="img/5.jpg" alt="Alt"></a>
-        <a href="img/6.jpg"><img src="img/6.jpg" alt="Alt"></a>
-        <a href="img/7.jpg"><img src="img/7.jpg" alt="Alt"></a>
-        <a href="img/8.jpg"><img src="img/8.jpg" alt="Alt"></a>
-        <a href="img/9.jpg"><img src="img/9.jpg" alt="Alt"></a>
-        <a href="img/10.jpg"><img src="img/10.jpg" alt="Alt"></a>
     </div>
+    <div class="aside_content">
+        <div class="user_info">
+            <img src="img/lucy.jpg" alt="lucy">
+            <h2>Scarlett Johansson</h2>
+            <p>Actress</p>
+        </div>
 
+        <nav>
+            <ul>
+                <li><a href="#">Портфолио</a></li>
+                <li><a href="#">Обо мне</a></li>
+                <li><a href="#">Контакты</a></li>
+            </ul>
+        </nav>
 
+    </div>
+</aside>
+<div class="content gallery">
+    <a class="dr" href="img/1.jpg"><img data-original="img/1.jpg" alt="Alt"></a>
+    <a class="sv" href="img/2.jpg"><img data-original="img/2.jpg" alt="Alt"></a>
+    <a class="sv" href="img/3.jpg"><img data-original="img/3.jpg" alt="Alt"></a>
+    <a class="dr" href="img/4.jpg"><img data-original="img/4.jpg" alt="Alt"></a>
+    <a class="dr" href="img/5.jpg"><img data-original="img/5.jpg" alt="Alt"></a>
+    <a class="sv" href="img/6.jpg"><img data-original="img/6.jpg" alt="Alt"></a>
+    <a class="dr" href="img/7.jpg"><img data-original="img/7.jpg" alt="Alt"></a>
+    <a class="dr" href="img/8.jpg"><img data-original="img/8.jpg" alt="Alt"></a>
+    <a class="sv" href="img/9.jpg"><img data-original="img/9.jpg" alt="Alt"></a>
+    <a class="dr" href="img/10.jpg"><img data-original="img/10.jpg" alt="Alt"></a>
+    <a class="dr" href="img/1.jpg"><img data-original="img/1.jpg" alt="Alt"></a>
+    <a class="sv" href="img/2.jpg"><img data-original="img/2.jpg" alt="Alt"></a>
+    <a class="sv" href="img/3.jpg"><img data-original="img/3.jpg" alt="Alt"></a>
+    <a class="sv" href="img/4.jpg"><img data-original="img/4.jpg" alt="Alt"></a>
+    <a class="dr" href="img/5.jpg"><img data-original="img/5.jpg" alt="Alt"></a>
+    <a class="sv" href="img/6.jpg"><img data-original="img/6.jpg" alt="Alt"></a>
+    <a class="dr" href="img/7.jpg"><img data-original="img/7.jpg" alt="Alt"></a>
+    <a class="sv" href="img/8.jpg"><img data-original="img/8.jpg" alt="Alt"></a>
+    <a class="dr" href="img/9.jpg"><img data-original="img/9.jpg" alt="Alt"></a>
+    <a class="sv" href="img/10.jpg"><img data-original="img/10.jpg" alt="Alt"></a>
+</div>
 
+<div class="filter_items">
+    <button class="filter_label active">Все</button>
+    <button class="filter_label" data-filter=".sv">Свадьба</button>
+    <button class="filter_label" data-filter=".dr">День рождения</button>
 
+</div>
 
+<div class="hidden"></div>
 
-
+<div class="loader">
+    <div class="loader_inner"> class=sv</div>
+</div>
 
 
 <script src="libs/jquery-3.2.1.min.js"></script>
