@@ -184,6 +184,8 @@ svg path {
 
 .aside_content nav {
     margin: 35px 0;
+    position: relative;
+    z-index: 5;
 }
 
 .aside_content ul,
@@ -228,7 +230,9 @@ svg path {
 .left_side.active .aside_content nav {
     margin-top: 30px;
 }
-
+.left_side .aside_content li:hover a {
+    border-color: tomato;
+}
 .aside_content li a::before {
     display: inline-block;
     font-family: 'linea-basic-10';
@@ -299,13 +303,15 @@ svg path {
     letter-spacing: 3px;
     border: 2px #fff solid;
 }
+
 .filter_label:hover,
-.filter_label.active{
+.filter_label.active {
     background-color: tomato;
     opacity: 1;
     border-color: tomato;
 
 }
+
 .loader {
     background: none repeat scroll 0 0 #ffffff;
     bottom: 0;
@@ -317,6 +323,7 @@ svg path {
     width: 100%;
     z-index: 9999;
 }
+
 .loader .loader_inner {
     background-image: url("../img/preloader.gif");
     background-size: cover;
@@ -330,4 +337,101 @@ svg path {
     left: 50%;
     top: 50%;
     position: absolute;
+}
+
+.mfp-content {
+    width: 100%;
+}
+
+.mfp-container {
+    padding: 0;
+}
+
+img.mfp-img {
+    display: block;
+    height: auto;
+    max-height: none !important;
+    padding: 0;
+    max-width: 100%;
+}
+
+.mfp-figure button.mfp-close {
+    background-color: tomato;
+    height: 50px;
+    padding: 0;
+    position: fixed;
+    right: 8px;
+    text-align: center;
+    width: 50px;
+}
+
+
+.mfp-zoom-out-cur .gallery{
+    left: -100%;
+}
+
+
+/* overlay at start */
+.mfp-fade.mfp-bg {
+    opacity: 1;
+}
+
+.mfp-figure{
+    background-color: #181818;
+}
+
+/* overlay animate in */
+.mfp-fade.mfp-bg.mfp-ready {
+    opacity: 1;
+}
+
+/* overlay animate out */
+.mfp-fade.mfp-bg.mfp-removing {
+    opacity: 1;
+}
+
+/* content at start */
+.mfp-fade.mfp-wrap .mfp-content {
+    left:100%;
+    -webkit-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s;
+}
+
+/* content animate it */
+.mfp-fade.mfp-wrap.mfp-ready .mfp-content {
+    left:0;
+}
+
+/* content animate out */
+.mfp-fade.mfp-wrap.mfp-removing .mfp-content {
+    left:100%;
+}
+
+.inside{
+    background-color: #fafafa;
+}
+.inside .content{
+    padding:70px 10% 50px;
+}
+.content_header{
+    text-align: center;
+    color: #000;
+}
+.content_header img{
+    width: 220px;
+    height: 220px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    margin-bottom: 35px;
+}
+.content_header p{
+    letter-spacing: 3px;
+}
+.content_body {
+    margin-top: 30px;
+    font-size: 15px;
+    line-height:1.7;
+    color: #000;
 }

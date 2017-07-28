@@ -1,8 +1,10 @@
 $(document).ready(function () {
 
     $("body, .left_side").niceScroll({
-        horizrailenabled : false
+        horizrailenabled: false
     });
+
+    $(".gallery").css("min-height", $(document).height()*2);
 
     $(".toggle_menu").click(function () {
         $(".sandwich").toggleClass("active");
@@ -47,10 +49,18 @@ $(document).ready(function () {
         $(".gallery a").css("opacity", "1");
     });
 
+    $(".gallery a").magnificPopup({
+        type: 'image',
+        gallery: {
+            enabled: true
+        },
+        removalDelay: 300,
+        mainClass: 'mfp-fade'
+    });
 
 });
 
-$(window).on('load', function() {
+$(window).on('load', function () {
 
     $(".loader_inner").fadeOut();
     $(".loader").delay(400).fadeOut("slow");
